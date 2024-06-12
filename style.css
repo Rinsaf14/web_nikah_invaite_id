@@ -1,0 +1,2436 @@
+@font-face {
+  font-family: "Butler";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Butler"),
+    url("assets/font/butler/Butler_Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Butler Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Butler Bold"),
+    url("assets/font/butler/Butler_Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Butler Ultra Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Butler Ultra Light"),
+    url("assets/font/butler/Butler_Ultra_Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Georgia"), url("assets/font/georgia/Georgia.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Snell Round Hand";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Snell Round Handa"),
+    url("assets/font/Snell Round Hand/SnellRoundhand.woff") format("woff");
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Butler", sans-serif !important;
+  overflow-x: hidden;
+}
+
+/* Openner */
+
+#openner {
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  z-index: 12;
+  transition: 0.5s;
+}
+
+.top-heading-openner {
+  font-family: Butler Stencil;
+  font-size: 1.5vmax;
+  color: #333333;
+  letter-spacing: 2px;
+}
+
+.heading-openner {
+  font-family: Butler Ultra Light;
+  font-size: 7vmax;
+  color: black;
+  position: relative;
+  margin: 0;
+}
+
+.heading-openner-and {
+  font-family: Snell Round Hand;
+  font-size: 4vmax;
+  color: black;
+  position: relative;
+  margin: 0;
+}
+
+.invitation {
+  margin-bottom: 0;
+}
+
+.invitation h4 {
+  font-family: Snell Round Hand;
+}
+
+.header-decoration-openner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  transform: translate(0%, 75%);
+  z-index: -1; /* Mengatur urutan tumpukan di bawah konten */
+}
+
+.text-group-bottom {
+  color: black;
+  max-width: 500px;
+}
+
+.text-group-bottom p {
+  font-size: 0.5srem;
+  font-family: Butler Stencil;
+  color: #333333;
+}
+
+.btn-open {
+  background: #9aa28d;
+  border: none !important;
+  padding: 20px;
+  border-radius: 50px;
+  color: white;
+  font-family: Butler Stencil;
+}
+
+@media (max-width: 419px) {
+  .header-decoration-center {
+    bottom: calc(-350px / 2);
+    transform: translate(-50%);
+    left: 50%;
+    width: 350px;
+  }
+}
+
+/* Openner End */
+
+/* Jumbotron */
+
+#jumbotron .container-fluid {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  overflow: hidden;
+}
+
+#jumbotron .container-fluid::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.text-header {
+  width: 610px;
+  text-align: center;
+  justify-content: start;
+  position: relative;
+  z-index: 1;
+}
+
+.container-jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content-jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content-jumbotron img {
+  margin-top: -100px;
+}
+
+.content-jumbotron h1 {
+  margin-top: 0px;
+  font-size: 50px;
+}
+
+.content-jumbotron h2 {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.content-jumbotron h3 {
+  margin-top: -90px;
+  font-size: 22px;
+}
+
+.left-flower,
+.right-flower {
+  width: 630px; /* Sesuaikan dengan lebar gambar bunga */
+  height: auto;
+  position: absolute;
+  top: 10%; /* Sesuaikan dengan posisi vertikal */
+  transform: translateY(-30%);
+}
+
+.right-flower {
+  top: 30%;
+}
+
+.left-flower {
+  left: 0px;
+}
+
+.right-flower {
+  right: 0px;
+}
+
+@media (max-width: 890px) {
+  .content-jumbotron img {
+    margin-top: -80px;
+  }
+
+  .text-header {
+    width: 550px;
+  }
+
+  .content-jumbotron h1 {
+    font-size: 44px;
+  }
+
+  .content-jumbotron h2 {
+    font-size: 18px;
+  }
+
+  .content-jumbotron h3 {
+    margin-top: -60px;
+    font-size: 22px;
+  }
+
+  .left-flower,
+  .right-flower {
+    width: 500px; /* Sesuaikan dengan lebar gambar bunga */
+    height: auto;
+    position: absolute;
+    top: 10%; /* Sesuaikan dengan posisi vertikal */
+    transform: translateY(-30%);
+  }
+  .right-flower {
+    top: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-jumbotron img {
+    margin-top: -80px;
+  }
+
+  .text-header {
+    width: 500px;
+  }
+
+  .content-jumbotron h1 {
+    font-size: 44px;
+  }
+
+  .content-jumbotron h2 {
+    font-size: 18px;
+  }
+
+  .content-jumbotron h3 {
+    margin-top: -60px;
+    font-size: 22px;
+  }
+
+  .left-flower,
+  .right-flower {
+    width: 400px; /* Sesuaikan dengan lebar gambar bunga */
+    height: auto;
+    position: absolute;
+    top: 10%; /* Sesuaikan dengan posisi vertikal */
+    transform: translateY(-30%);
+  }
+  .right-flower {
+    top: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  .content-jumbotron img {
+    margin-top: -60px;
+  }
+
+  .text-header {
+    width: 400px;
+  }
+
+  .content-jumbotron h1 {
+    font-size: 44px;
+  }
+
+  .content-jumbotron h2 {
+    font-size: 18px;
+  }
+
+  .content-jumbotron h3 {
+    margin-top: -40px;
+    font-size: 22px;
+  }
+
+  .left-flower,
+  .right-flower {
+    width: 400px; /* Sesuaikan dengan lebar gambar bunga */
+    height: auto;
+    position: absolute;
+    top: 10%; /* Sesuaikan dengan posisi vertikal */
+    transform: translateY(-30%);
+  }
+  .right-flower {
+    top: 60%;
+  }
+}
+
+@media (max-width: 419px) {
+  .content-jumbotron img {
+    margin-top: -60px;
+  }
+
+  .text-header {
+    width: 300px;
+  }
+
+  .content-jumbotron h1 {
+    font-size: 30px;
+  }
+
+  .content-jumbotron h2 {
+    font-size: 14px;
+  }
+
+  .content-jumbotron h3 {
+    margin-top: -40px;
+    font-size: 16px;
+  }
+
+  .left-flower,
+  .right-flower {
+    width: 250px; /* Sesuaikan dengan lebar gambar bunga */
+    height: auto;
+    position: absolute;
+    top: 10%; /* Sesuaikan dengan posisi vertikal */
+    transform: translateY(-30%);
+  }
+  .right-flower {
+    top: 75%;
+  }
+}
+
+/* Hari Bahagia */
+
+#hari-bahagia {
+  margin-top: 5rem;
+  background: white;
+  padding-bottom: 3rem;
+}
+
+.heading-title {
+  margin-bottom: 10px;
+  color: #937d5d;
+}
+
+.heading-title h3 {
+  font-family: Butler;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.waktu {
+  font-family: Butler;
+  color: black;
+}
+
+.waktu-wrapper {
+  margin-top: 20px;
+  border: 2px solid #f6e3d2;
+  border-radius: 20px;
+  background: #fdf6f0;
+  padding: 0;
+}
+
+.angka-waktu {
+  font-size: 3rem;
+  font-family: Georgia;
+}
+
+.ket-waktu {
+  margin-top: -10px;
+  font-size: 1.2rem;
+  font-size: Butler;
+}
+
+@media (max-width: 890px) {
+  #hari-bahagia {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .angka-waktu {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 650px) {
+  #hari-bahagia {
+    padding-bottom: 0rem;
+  }
+
+  .heading-title h3 {
+    font-size: 18px;
+  }
+  .angka-waktu {
+    font-size: 2.3rem;
+  }
+  .ket-waktu {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 419px) {
+  #hari-bahagia {
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  .heading-title h3 {
+    font-size: 13px;
+  }
+  .angka-waktu {
+    font-size: 1.5rem;
+  }
+  .ket-waktu {
+    font-size: 0.8rem;
+  }
+}
+
+/* Al Qur'an */
+
+#ayat-pasangan {
+  margin-top: 3rem;
+  background: #f6e3d2;
+  padding-bottom: 4rem;
+  color: #cc9933;
+}
+
+.arrum-ayat p {
+  margin-top: 80px;
+  font-size: 34px;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.arrum-ayat h5 {
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.arrum-ayat h4 {
+  color: black;
+  font-size: 20px;
+  font-style: italic;
+  font-family: Georgia;
+}
+
+@media (max-width: 419px) {
+  #ayat-pasangan {
+    margin-top: 1rem;
+    background: #f6e3d2;
+    padding-bottom: 2rem;
+  }
+
+  .arrum-ayat p {
+    margin-top: 80px;
+    font-size: 23px;
+    color: black;
+    margin-bottom: 1.5rem;
+  }
+
+  .arrum-ayat h5 {
+    color: black;
+    margin-bottom: 2rem;
+    font-size: 16px;
+  }
+
+  .arrum-ayat h4 {
+    color: black;
+    font-size: 16px;
+    font-style: italic;
+    font-family: Georgia;
+  }
+}
+
+/* Pengantin */
+#pengantin {
+  background: white;
+  padding-bottom: -30px;
+}
+
+.undangan-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3; /* Agar elemen teks undangan berada di atas elemen lain */
+  text-align: center;
+  color: #4e4f4f;
+}
+
+.pengantin-openner {
+  margin-bottom: 40px;
+}
+
+.pengantin-openner h5 {
+  font-family: Butler;
+  font-size: 1.5rem;
+  color: #4e4f4f;
+}
+
+.nama-pengantin {
+  margin: 0;
+}
+
+.nama-penganti h1,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.nama-pengantin h1 {
+  font-family: Butler Ultra Light;
+  font-size: 7vmax;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.nama-pengantin h3 {
+  font-family: Snell Round Hand;
+  font-size: 4vmax;
+  color: #beaa92;
+}
+
+.nama-pengantin p {
+  font-family: Georgia;
+  font-size: 24px;
+  color: #4e4f4f;
+}
+
+.heading-and {
+  font-family: Snell Round Hand;
+  font-size: 60px;
+  color: black;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.pelaksanaan {
+  font-family: Georgia;
+  margin-bottom: 0px;
+}
+
+.pelaksanaan p {
+  font-size: 24px;
+  color: #4e4f4f;
+  margin-bottom: 20px;
+}
+
+.pelaksanaan h5 {
+  font-family: Georgia;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.pelaksanaan h6 {
+  font-family: Georgia;
+  letter-spacing: 2px;
+  margin-top: 0px;
+  font-size: 22px;
+}
+
+.pelaksanaan h4 span {
+  font-size: 50px;
+  font-family: Butler;
+  color: #d7d7d7;
+}
+
+.custom-hr {
+  width: 50%; /* Ubah panjangnya sesuai kebutuhan */
+  border-top: 1px solid black; /* Atur warna dan jenis garis */
+  margin: 20px auto; /* Memberikan jarak dari atas dan bawah */
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.pengantin-alamat {
+  font-family: Georgia;
+}
+
+.pengantin-alamat h5 {
+  font-size: 22px;
+  color: #94846d;
+  letter-spacing: 3px;
+}
+
+.pengantin-alamat p {
+  font-size: 24px;
+  color: #4e4f4f;
+}
+
+.wrapper-foto {
+  z-index: 0;
+  display: inline-block;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.foto-pengantin {
+  width: 900px;
+}
+
+.bg-pengantin-left {
+  width: 900px;
+  height: auto;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  left: 0px;
+  top: 45%;
+}
+
+.bg-pengantin-right {
+  width: 900px;
+  height: auto;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  left: -50;
+  top: 32%;
+}
+
+@media (max-width: 890px) {
+  #pengantin {
+    padding-bottom: 0px;
+  }
+
+  .undangan-info {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Agar elemen teks undangan berada di atas elemen lain */
+    text-align: center;
+  }
+
+  .undangan-info h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .pengantin-openner {
+    margin-bottom: 10px;
+    margin-top: -60px;
+  }
+
+  .pengantin-openner p {
+    font-size: 16px;
+  }
+
+  .pengantin-openner h5 {
+    font-size: 17px;
+    color: #4e4f4f;
+    margin-top: -10px;
+  }
+
+  .nama-pengantin h1 {
+    font-family: Butler Ultra Light;
+    font-size: 80px;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nama-pengantin h3 {
+    font-family: Snell Round Hand;
+    font-size: 30px;
+    color: #beaa92;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nama-pengantin p {
+    font-family: Georgia;
+    font-size: 16px;
+    color: #4e4f4f;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading-and {
+    font-family: Snell Round Hand;
+    font-size: 60px;
+    color: black;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .pelaksanaan {
+    font-family: Georgia;
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+
+  .pelaksanaan p {
+    font-size: 16px;
+    color: #4e4f4f;
+    margin-bottom: 15px;
+  }
+
+  .pelaksanaan h5 {
+    font-family: Georgia;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 13px;
+  }
+
+  .pelaksanaan h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .pelaksanaan h6 {
+    font-family: Georgia;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    font-size: 13px;
+  }
+
+  .pelaksanaan h4 span {
+    font-size: 40px;
+    font-family: Butler;
+    color: #d7d7d7;
+  }
+
+  .custom-hr {
+    width: 50%; /* Ubah panjangnya sesuai kebutuhan */
+    border-top: 0.5px solid grayscale; /* Atur warna dan jenis garis */
+    margin: 20px auto; /* Memberikan jarak dari atas dan bawah */
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .pengantin-alamat {
+    font-family: Georgia;
+  }
+
+  .pengantin-alamat h5 {
+    font-size: 13px;
+    color: #94846d;
+    letter-spacing: 3px;
+  }
+
+  .pengantin-alamat p {
+    font-size: 16px;
+    color: #4e4f4f;
+  }
+
+  .wrapper-foto {
+    z-index: 0;
+    display: inline-block;
+    padding: 35px;
+    box-sizing: border-box;
+  }
+
+  .foto-pengantin {
+    width: 900px;
+  }
+
+  .bg-pengantin-left {
+    width: 650px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: 0px;
+    top: 45%;
+  }
+
+  .bg-pengantin-right {
+    width: 650px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: -50;
+    top: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  #pengantin {
+    padding-bottom: 0px;
+  }
+
+  .undangan-info {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Agar elemen teks undangan berada di atas elemen lain */
+    text-align: center;
+  }
+
+  .undangan-info h3 {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .pengantin-openner {
+    margin-bottom: 10px;
+    margin-top: -60px;
+  }
+
+  .pengantin-openner p {
+    font-size: 12px;
+  }
+
+  .pengantin-openner h5 {
+    font-size: 12px;
+    color: #4e4f4f;
+    margin-top: -10px;
+  }
+
+  .nama-pengantin h1 {
+    font-family: Butler Ultra Light;
+    font-size: 55px;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nama-pengantin h3 {
+    font-family: Snell Round Hand;
+    font-size: 25px;
+    color: #beaa92;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nama-pengantin p {
+    font-family: Georgia;
+    font-size: 13px;
+    color: #4e4f4f;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading-and {
+    font-family: Snell Round Hand;
+    font-size: 35px;
+    color: black;
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .pelaksanaan {
+    font-family: Georgia;
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+
+  .pelaksanaan p {
+    font-size: 13px;
+    color: #4e4f4f;
+    margin-bottom: 15px;
+  }
+
+  .pelaksanaan h5 {
+    font-family: Georgia;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 13px;
+  }
+
+  .pelaksanaan h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .pelaksanaan h6 {
+    font-family: Georgia;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    font-size: 13px;
+  }
+
+  .pelaksanaan h4 span {
+    font-size: 30px;
+    font-family: Butler;
+    color: #d7d7d7;
+  }
+
+  .custom-hr {
+    width: 50%; /* Ubah panjangnya sesuai kebutuhan */
+    border-top: 0.5px solid grayscale; /* Atur warna dan jenis garis */
+    margin: 20px auto; /* Memberikan jarak dari atas dan bawah */
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .pengantin-alamat {
+    font-family: Georgia;
+  }
+
+  .pengantin-alamat h5 {
+    font-size: 13px;
+    color: #94846d;
+    letter-spacing: 3px;
+  }
+
+  .pengantin-alamat p {
+    font-size: 13px;
+    color: #4e4f4f;
+  }
+
+  .wrapper-foto {
+    z-index: 0;
+    display: inline-block;
+    padding: 35px;
+    box-sizing: border-box;
+  }
+
+  .foto-pengantin {
+    width: 900px;
+  }
+
+  .bg-pengantin-left {
+    width: 450px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: 0px;
+    top: 45%;
+  }
+
+  .bg-pengantin-right {
+    width: 450px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: -50;
+    top: 32%;
+  }
+}
+
+@media (max-width: 650px) {
+  #pengantin {
+    padding-bottom: 0px;
+  }
+
+  .undangan-info {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Agar elemen teks undangan berada di atas elemen lain */
+    text-align: center;
+  }
+
+  .undangan-info h3 {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .pengantin-openner {
+    margin-bottom: 10px;
+    margin-top: -60px;
+  }
+
+  .pengantin-openner p {
+    font-size: 12px;
+  }
+
+  .pengantin-openner h5 {
+    font-size: 12px;
+    color: #4e4f4f;
+    margin-top: -10px;
+  }
+
+  .nama-pengantin h1 {
+    font-family: Butler Ultra Light;
+    font-size: 55px;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nama-pengantin h3 {
+    font-family: Snell Round Hand;
+    font-size: 25px;
+    color: #beaa92;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nama-pengantin p {
+    font-family: Georgia;
+    font-size: 13px;
+    color: #4e4f4f;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading-and {
+    font-family: Snell Round Hand;
+    font-size: 35px;
+    color: black;
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .pelaksanaan {
+    font-family: Georgia;
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+
+  .pelaksanaan p {
+    font-size: 13px;
+    color: #4e4f4f;
+    margin-bottom: 15px;
+  }
+
+  .pelaksanaan h5 {
+    font-family: Georgia;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 13px;
+  }
+
+  .pelaksanaan h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .pelaksanaan h6 {
+    font-family: Georgia;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    font-size: 13px;
+  }
+
+  .pelaksanaan h4 span {
+    font-size: 30px;
+    font-family: Butler;
+    color: #d7d7d7;
+  }
+
+  .custom-hr {
+    width: 50%; /* Ubah panjangnya sesuai kebutuhan */
+    border-top: 0.5px solid grayscale; /* Atur warna dan jenis garis */
+    margin: 20px auto; /* Memberikan jarak dari atas dan bawah */
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .pengantin-alamat {
+    font-family: Georgia;
+  }
+
+  .pengantin-alamat h5 {
+    font-size: 13px;
+    color: #94846d;
+    letter-spacing: 3px;
+  }
+
+  .pengantin-alamat p {
+    font-size: 13px;
+    color: #4e4f4f;
+  }
+
+  .wrapper-foto {
+    z-index: 0;
+    display: inline-block;
+    padding: 35px;
+    box-sizing: border-box;
+  }
+
+  .foto-pengantin {
+    width: 900px;
+  }
+
+  .bg-pengantin-left {
+    width: 450px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: 0px;
+    top: 45%;
+  }
+
+  .bg-pengantin-right {
+    width: 450px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: -50;
+    top: 32%;
+  }
+}
+
+@media (max-width: 419px) {
+  #pengantin {
+    padding-bottom: 0px;
+  }
+
+  .undangan-info {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Agar elemen teks undangan berada di atas elemen lain */
+    text-align: center;
+  }
+
+  .undangan-info h3 {
+    font-size: 8px;
+  }
+
+  .pengantin-openner {
+    margin-bottom: 0px;
+    margin-top: -60px;
+  }
+
+  .pengantin-openner p {
+    font-size: 6px;
+  }
+
+  .pengantin-openner h5 {
+    font-size: 6px;
+    color: #4e4f4f;
+    margin-top: -10px;
+  }
+
+  .nama-pengantin h1 {
+    font-family: Butler Ultra Light;
+    font-size: 28px;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nama-pengantin h3 {
+    font-family: Snell Round Hand;
+    font-size: 15px;
+    color: #beaa92;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nama-pengantin p {
+    font-family: Georgia;
+    font-size: 8px;
+    color: #4e4f4f;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading-and {
+    font-family: Snell Round Hand;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .pelaksanaan {
+    font-family: Georgia;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  .pelaksanaan p {
+    font-size: 8px;
+    color: #4e4f4f;
+    margin-bottom: 5px;
+  }
+
+  .pelaksanaan h5 {
+    font-family: Georgia;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 10px;
+  }
+
+  .pelaksanaan h4 {
+    font-size: 10px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+
+  .pelaksanaan h6 {
+    font-family: Georgia;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    font-size: 10px;
+  }
+
+  .pelaksanaan h4 span {
+    font-size: 15px;
+    font-family: Butler;
+    color: #d7d7d7;
+  }
+
+  .custom-hr {
+    width: 50%; /* Ubah panjangnya sesuai kebutuhan */
+    border-top: 0.5px solid grayscale; /* Atur warna dan jenis garis */
+    margin: 20px auto; /* Memberikan jarak dari atas dan bawah */
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+
+  .pengantin-alamat {
+    font-family: Georgia;
+  }
+
+  .pengantin-alamat h5 {
+    font-size: 7px;
+    color: #94846d;
+    letter-spacing: 3px;
+  }
+
+  .pengantin-alamat p {
+    font-size: 8px;
+    color: #4e4f4f;
+  }
+
+  .wrapper-foto {
+    z-index: 0;
+    display: inline-block;
+    padding: 35px;
+    box-sizing: border-box;
+  }
+
+  .foto-pengantin {
+    width: 900px;
+  }
+
+  .bg-pengantin-left {
+    width: 300px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: 0px;
+    top: 45%;
+  }
+
+  .bg-pengantin-right {
+    width: 300px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: -50;
+    top: 32%;
+  }
+}
+
+/* Lokasi */
+
+#lokasi .container-fluid {
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 30px;
+}
+
+.map-lokasi {
+  width: 550px;
+  height: 350px;
+  border-radius: 30px;
+  text-align: center;
+  justify-content: center;
+  position: reltive;
+}
+
+.container-lokasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content-lokasi iframe {
+  margin-top: -50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tombol-lokasi {
+  display: flex;
+  flex-direction: column; /* Mengatur arah menjadi kolom */
+  justify-content: center;
+  align-items: center;
+}
+
+.tombol-map .btn {
+  background-color: #9aa28d;
+  padding: 17px 50px;
+  border-radius: 50px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.tombol-live {
+  margin-top: 50px;
+}
+
+.tombol-live h2 {
+  font-family: Georgia;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.tombol-live h2 span {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #484443;
+}
+
+.tombol-live .btn {
+  background-color: white;
+  border: 2px solid black;
+  padding: 17px 35px;
+  border-radius: 50px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.left-bunga,
+.right-bunga {
+  height: auto;
+  position: absolute;
+  top: 10%; /* Sesuaikan dengan posisi vertikal */
+  transform: translateY(-30%);
+}
+
+.right-bunga {
+  top: 5%;
+  width: 650px; /* Sesuaikan dengan lebar gambar bunga */
+}
+
+.left-bunga {
+  top: 30%;
+  width: 700px; /* Sesuaikan dengan lebar gambar bunga */
+}
+
+.left-bunga {
+  left: 0px;
+}
+
+.right-bunga {
+  right: 0px;
+}
+
+@media (max-width: 890px) {
+  #lokasi .container-fluid {
+    height: 500px;
+    width: 100vw;
+  }
+
+  .map-lokasi {
+    width: 400px;
+    height: 280px;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    position: reltive;
+  }
+
+  .container-lokasi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .content-lokasi iframe {
+    margin-top: -50px;
+    margin-left: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .tombol-lokasi {
+    display: flex;
+    flex-direction: column; /* Mengatur arah menjadi kolom */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tombol-map .btn {
+    background-color: #9aa28d;
+    padding: 12px 34px;
+    border-radius: 50px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: white;
+  }
+
+  .tombol-live {
+    margin-top: 40px;
+  }
+
+  .tombol-live h2 {
+    font-family: Georgia;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .tombol-live h2 span {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #484443;
+  }
+
+  .tombol-live .btn {
+    background-color: white;
+    border: 2px solid black;
+    padding: 12px 25px;
+    border-radius: 50px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 16px;
+  }
+
+  .left-bunga,
+  .right-bunga {
+    height: auto;
+    position: absolute;
+    top: 10%; /* Sesuaikan dengan posisi vertikal */
+    transform: translateY(-30%);
+  }
+
+  .right-bunga {
+    top: 5%;
+    width: 450px; /* Sesuaikan dengan lebar gambar bunga */
+  }
+
+  .left-bunga {
+    top: 40%;
+    width: 500px; /* Sesuaikan dengan lebar gambar bunga */
+  }
+
+  .left-bunga {
+    left: 0px;
+  }
+
+  .right-bunga {
+    right: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  #lokasi .container-fluid {
+    height: 500px;
+    width: 100vw;
+  }
+
+  .map-lokasi {
+    width: 370px;
+    height: 250px;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    position: reltive;
+  }
+
+  .container-lokasi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .content-lokasi iframe {
+    margin-top: -50px;
+    margin-left: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .tombol-lokasi {
+    display: flex;
+    flex-direction: column; /* Mengatur arah menjadi kolom */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tombol-map .btn {
+    background-color: #9aa28d;
+    padding: 12px 28px;
+    border-radius: 50px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: white;
+  }
+
+  .tombol-live {
+    margin-top: 40px;
+  }
+
+  .tombol-live h2 {
+    font-family: Georgia;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .tombol-live h2 span {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #484443;
+  }
+
+  .tombol-live .btn {
+    background-color: white;
+    border: 2px solid black;
+    padding: 12px 25px;
+    border-radius: 50px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 12px;
+  }
+
+  .left-bunga,
+  .right-bunga {
+    height: auto;
+    position: absolute;
+    top: 10%; /* Sesuaikan dengan posisi vertikal */
+    transform: translateY(-30%);
+  }
+
+  .right-bunga {
+    top: 5%;
+    width: 350px; /* Sesuaikan dengan lebar gambar bunga */
+  }
+
+  .left-bunga {
+    top: 40%;
+    width: 400px; /* Sesuaikan dengan lebar gambar bunga */
+  }
+
+  .left-bunga {
+    left: 0px;
+  }
+
+  .right-bunga {
+    right: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  #lokasi .container-fluid {
+    height: 500px;
+    width: 100vw;
+  }
+
+  .map-lokasi {
+    width: 370px;
+    height: 250px;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    position: reltive;
+  }
+
+  .container-lokasi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .content-lokasi iframe {
+    margin-top: -50px;
+    margin-left: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .tombol-lokasi {
+    display: flex;
+    flex-direction: column; /* Mengatur arah menjadi kolom */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tombol-map .btn {
+    background-color: #9aa28d;
+    padding: 12px 28px;
+    border-radius: 50px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: white;
+  }
+
+  .tombol-live {
+    margin-top: 40px;
+  }
+
+  .tombol-live h2 {
+    font-family: Georgia;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .tombol-live h2 span {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #484443;
+  }
+
+  .tombol-live .btn {
+    background-color: white;
+    border: 2px solid black;
+    padding: 12px 25px;
+    border-radius: 50px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 12px;
+  }
+
+  .left-bunga,
+  .right-bunga {
+    height: auto;
+    position: absolute;
+    top: 10%; /* Sesuaikan dengan posisi vertikal */
+    transform: translateY(-30%);
+  }
+
+  .right-bunga {
+    top: 5%;
+    width: 350px; /* Sesuaikan dengan lebar gambar bunga */
+  }
+
+  .left-bunga {
+    top: 40%;
+    width: 400px; /* Sesuaikan dengan lebar gambar bunga */
+  }
+
+  .left-bunga {
+    left: 0px;
+  }
+
+  .right-bunga {
+    right: 0px;
+  }
+}
+
+@media (max-width: 419px) {
+  #lokasi .container-fluid {
+    height: 300px;
+    width: 100vw;
+  }
+
+  .container-lokasi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .map-lokasi {
+    width: 250px;
+    height: 150px;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    position: reltive;
+  }
+
+  .content-lokasi {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  .content-lokasi iframe {
+    margin-top: -10px;
+    margin-bottom: 0px;
+    padding-top: 0;
+    margin-left: 5pxpx;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .tombol-lokasi {
+    display: flex;
+    flex-direction: column; /* Mengatur arah menjadi kolom */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tombol-map .btn {
+    background-color: #9aa28d;
+    padding: 10px 32px;
+    border-radius: 50px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 7px;
+  }
+
+  .tombol-live {
+    margin-top: 25px;
+  }
+
+  .tombol-live h2 {
+    font-family: Georgia;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .tombol-live h2 span {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #484443;
+  }
+
+  .tombol-live .btn {
+    background-color: white;
+    border: 1.5px solid black;
+    padding: 5px 12px;
+    border-radius: 50px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 7px;
+  }
+
+  .left-bunga,
+  .right-bunga {
+    height: auto;
+    position: absolute;
+    top: 10%; /* Sesuaikan dengan posisi vertikal */
+    transform: translateY(-30%);
+  }
+
+  .right-bunga {
+    top: 5%;
+    width: 200px; /* Sesuaikan dengan lebar gambar bunga */
+  }
+
+  .left-bunga {
+    top: 30%;
+    width: 200px; /* Sesuaikan dengan lebar gambar bunga */
+  }
+
+  .left-bunga {
+    left: 0px;
+  }
+
+  .right-bunga {
+    right: 0px;
+  }
+}
+
+/* Lokasi End */
+
+/* RSVP */
+
+#rsvp .container-fluid {
+  height: 650px;
+  width: 100vw;
+}
+
+.rsvp-content {
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.rsvp-title h3 {
+  font-family: Butler Ultra Light;
+  font-size: 7vmax;
+  color: black;
+  margin-top: px;
+  padding: 0;
+}
+
+.detail-rsvp {
+  background: white;
+  margin-top: 30px;
+}
+
+.content-rsvp {
+  margin-left: 80px;
+  margin-right: 40px;
+}
+
+.content-rsvp p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.5em;
+  border: 1.5px solid black;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+.btn-konfirmasi {
+  background-color: #9aa28d;
+  padding: 20px 100px;
+  border-radius: 50px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  border: none;
+  color: white;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.rsvp-tamu {
+  background-color: #f6e3d2;
+  padding: 20px 40px;
+}
+
+.deskripsi-tamu h5 {
+  font-style: Butler Bold;
+  font-style: bold;
+}
+
+.hadir {
+  color: orange;
+  background-color: white;
+  padding: 2px 2px;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.daftar-tamu {
+  font-style: Georgia;
+}
+
+.deskripsi-tamu {
+  display: flex;
+}
+
+.deskripsi-tamu h5 {
+  margin-right: 10px;
+}
+/* RSVP End */
+
+/* Hadiah */
+
+#hadiah {
+  background: white;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+.hadiah-info {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3; /* Agar elemen teks undangan berada di atas elemen lain */
+  text-align: center;
+  color: black;
+}
+
+.hadiah-info h3 {
+  font-size: 25px;
+  padding: 0 20px;
+  margin-bottom: 60px;
+  margin-top: -50px;
+}
+
+.hadiah-openner h3 {
+  font-family: Butler Ultra Light;
+  font-size: 7vmax;
+  color: black;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  margin-bottom: 40px;
+}
+
+.rekening {
+  display: flex;
+  justify-content: space-between; /* Membuat dua div sejajar dan berada di kanan dan kiri container */
+  align-items: center; /* Menengahkan vertikal */
+}
+
+.left-content {
+  margin-left: 100px;
+  font-family: Georgia Bold;
+}
+
+.left-content h5 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.left-content p {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.right-content {
+  font-family: Georgia Bold;
+}
+
+.right-content h5 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.right-content p {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.right-content {
+  margin-right: 100px;
+}
+
+.foto-hadiah {
+  width: 700px;
+}
+
+.wrapper-hadiah {
+  z-index: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: -230px;
+}
+
+.bg-hadiah-left {
+  width: 1000px;
+  height: auto;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  left: -290px;
+  top: -86%;
+}
+
+@media (max-width: 650px) {
+  #hadiah {
+    height: 350px;
+    margin-bottom: 0px;
+  }
+
+  .hadiah-info {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Agar elemen teks undangan berada di atas elemen lain */
+    text-align: center;
+    color: black;
+  }
+
+  .hadiah-info h3 {
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  .hadiah-openner h3 {
+    font-family: Butler Ultra Light;
+    font-size: 7vmax;
+    color: black;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+    margin-bottom: -20px;
+  }
+
+  .deskripsi-hadiah {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .rekening {
+    display: flex;
+    justify-content: space-between; /* Membuat dua div sejajar dan berada di kanan dan kiri container */
+    align-items: center; /* Menengahkan vertikal */
+  }
+
+  .left-content {
+    margin-left: 100px;
+    font-family: Georgia Bold;
+  }
+
+  .left-content h5 {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .left-content p {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .right-content {
+    font-family: Georgia Bold;
+    margin-left: 40px;
+  }
+
+  .right-content h5 {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .right-content p {
+    font-size: 10px;
+    margin: 0;
+    padding-right: 10px;
+  }
+
+  .right-content {
+    margin-right: 100px;
+  }
+
+  .icon-tabler {
+    width: 10px;
+    height: 10px;
+  }
+
+  .foto-hadiah {
+    width: 380px;
+    margin-top: 170px;
+  }
+
+  .wrapper-hadiah {
+    z-index: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: -230px;
+  }
+
+  .bg-hadiah-left {
+    width: 500px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: -150px;
+    top: -50%;
+  }
+}
+
+@media (max-width: 419px) {
+  #hadiah {
+    height: 350px;
+    margin-bottom: 10px;
+  }
+
+  .hadiah-info {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Agar elemen teks undangan berada di atas elemen lain */
+    text-align: center;
+    color: black;
+  }
+
+  .hadiah-info h3 {
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  .hadiah-openner h3 {
+    font-family: Butler Ultra Light;
+    font-size: 7vmax;
+    color: black;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+    margin-bottom: -20px;
+  }
+
+  .deskripsi-hadiah {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .rekening {
+    display: flex;
+    justify-content: space-between; /* Membuat dua div sejajar dan berada di kanan dan kiri container */
+    align-items: center; /* Menengahkan vertikal */
+  }
+
+  .left-content {
+    margin-left: 100px;
+    font-family: Georgia Bold;
+  }
+
+  .left-content h5 {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .left-content p {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .right-content {
+    font-family: Georgia Bold;
+    margin-left: 40px;
+  }
+
+  .right-content h5 {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .right-content p {
+    font-size: 10px;
+    margin: 0;
+    padding-right: 10px;
+  }
+
+  .right-content {
+    margin-right: 100px;
+  }
+
+  .icon-tabler {
+    width: 10px;
+    height: 10px;
+  }
+
+  .foto-hadiah {
+    width: 330px;
+    margin-top: 170px;
+  }
+
+  .wrapper-hadiah {
+    z-index: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: -230px;
+  }
+
+  .bg-hadiah-left {
+    width: 1000px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: -180px;
+    top: -28%;
+  }
+}
+
+/* Hadiah End */
+
+/* Terimakasih */
+
+#terima-kasih {
+  margin-top: 3rem;
+  background: white;
+  padding-bottom: 2.5rem;
+  color: #cc9933;
+}
+
+.terimakasih-ayat h3 {
+  margin-top: 50px;
+  color: black;
+  font-weight: bold;
+}
+
+.terimakasih-ayat p {
+  margin-top: 20px;
+  font-size: 36px;
+  color: black;
+  margin-bottom: 0;
+}
+
+.terimakasih-ayat h5 {
+  color: black;
+  margin-bottom: 8px;
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.terimakasih-ayat h4 {
+  color: black;
+  font-size: 17px;
+  font-style: italic;
+  font-family: Georgia;
+}
+
+@media (max-width: 419px) {
+  #terima-kasih {
+    margin-top: 0px;
+    background: white;
+    padding-bottom: 2.5rem;
+  }
+
+  .terimakasih-ayat h3 {
+    margin-top: 50px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .terimakasih-ayat p {
+    margin-top: 20px;
+    font-size: 36px;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .terimakasih-ayat h5 {
+    color: black;
+    margin-bottom: 8px;
+    font-size: 16px;
+    margin-top: 0px;
+  }
+
+  .terimakasih-ayat h4 {
+    color: black;
+    font-size: 12px;
+    font-style: italic;
+    font-family: Georgia;
+  }
+}
+
+/* End Terimakasih */
+
+/* Foto Bersama */
+
+.full-image {
+  background-image: url("assets/img/foto-bersama.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%; /* Mengisi lebar div */
+  height: 100vh; /* Mengisi tinggi div dengan tinggi viewport */
+}
+
+@media (max-width: 419px) {
+  .full-image {
+    background-image: url("assets/img/foto-bersama.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Mengisi lebar div */
+    height: 250px; /* Mengisi tinggi div dengan tinggi viewport */
+  }
+}
+
+/* End Foto Bersama */
+
+/* Footer */
+footer {
+  background-color: #f6e3d2;
+  padding: 0px;
+}
+
+.footer-content img {
+  width: 120px;
+}
+
+@media (max-width: 419px) {
+  footer {
+    background-color: #f6e3d2;
+    padding: 0px;
+  }
+
+  .footer-content img {
+    width: 120px;
+  }
+}
+/* Footer End */
+
+/* Nasyid */
+.music-icon {
+  position: fixed;
+  color: white;
+  background-color: #9aa28d;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 1px 1px 5px #00000052;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+.music-icon:hover {
+  filter: brightness(1.3);
+}
+
+.music-icon.disabled {
+  filter: grayscale();
+}
+
+@media (min-width: 890px) {
+  .header-decoration-center {
+    bottom: calc(-350px / 2);
+    transform: translate(-50%);
+    left: 50%;
+    width: 350px;
+  }
+
+  .header-decoration-left {
+    left: calc(-300px / 2);
+    bottom: calc(-350px / 2);
+    width: 400px;
+  }
+  .header-decoration-right {
+    right: calc(-300px / 2);
+    bottom: calc(-350px / 2);
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 650px) {
+  .header-decoration-center {
+    bottom: calc(-350px / 2);
+    transform: translate(-50%);
+    left: 50%;
+    width: 350px;
+  }
+
+  .header-decoration-left {
+    left: calc(-300px / 2);
+    bottom: calc(-350px / 2);
+    width: 350px;
+  }
+  .header-decoration-right {
+    right: calc(-300px / 2);
+    bottom: calc(-350px / 2);
+    width: 350px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-decoration-center {
+    bottom: calc(-350px / 2);
+    transform: translate(-50%);
+    left: 50%;
+    width: 350px;
+  }
+
+  .header-decoration-left {
+    left: calc(-300px / 2);
+    top: calc(-350px / 2);
+    width: 350px;
+  }
+  .header-decoration-right {
+    right: calc(-300px / 2);
+    top: calc(-350px / 2);
+    width: 350px;
+  }
+}
+
+@media (max-width: 419px) {
+  .header-decoration-center {
+    bottom: calc(-350px / 2);
+    transform: translate(-50%);
+    left: 50%;
+    width: 350px;
+  }
+
+  .header-decoration-left {
+    left: calc(-300px / 2);
+    top: calc(-300px / 2);
+    width: 300px;
+  }
+  .header-decoration-right {
+    right: calc(-300px / 2);
+    top: calc(-300px / 2);
+    width: 300px;
+  }
+}
